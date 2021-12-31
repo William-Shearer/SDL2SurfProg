@@ -1,0 +1,44 @@
+SDL2SurfProg v1.0.1
+
+Description:
+This is a utility that directly saves an SDL_Surface to a recoverable binary file format that cannot be loaded and edited in a bitmap editor (eg; GIMP or Paint Net). It may only be recovered into SDL directly using the routine in the program. The program can load and convert .bmp, and .png file formats, of 32, 24 and 8 bits, and 24 bit jpg.
+
+Platform:
+Windows. The program has been compiled and tested successfully on a 64 bit, little endian PC. It compiles with MSVS (C), and GCC.
+ 
+Build and installation:
+For compiling, ensure availability on system of the development libraries for SDL2, 2.0.18. 
+Files: SDLSurfProgV101.c, SDLSurfProg.h.
+
+Usage:
+Place compiled executable in a folder of your choice. Also (if path to the location of SDL.dll runtime is not indicated in the environment variables), SDL.dll must also be placed in the folder with the executable.
+
+To convert the surface to bin file.
+1. Place the images you wish to convert in the same folder as the executable (image specifications above).
+2. Launch the executable.
+3. Select Menu option 1 to load an image.
+4. Enter the name of the png, jpg or bmp you wish to load. Include the extensiom (Eg; MyPicture.bmp).
+5. If there is a message stating that a surface is already loaded, use Menu option 5 to clear the surface, and try to load again.
+6. The image will load if it is of the required type.
+7. Select Menu option 4 to visualize the image (3 seconds, in Window).
+8. Select Menu option 2 to save the image to a .bin file. 
+9. The file naming convention is automatic, and the resultant file will be output to the same folder.
+
+To test the bin file:
+1. Before loading the bin file, ensure the surface is clear (press 5).
+2. Select Menu option 3.
+3. Enter the name of the bin file to load, including the extension (Eg; MyPicture.bin).
+4. The image will load, if it is of an acceptable format (it will not load bin files created by another program).
+5. Select Menu option 4 to visualize the image (3 seconds, in Window).
+
+Others:
+1. Menu option 6 will refresh the console screen, eliminating log notes and redisplaying the Menu.
+2. Menu option 7 exits the program. It is recommended to exit using this option, as it clears potential problems before quiting.
+
+The name of the output bin files may be changed after production, to the user's liking.
+
+That is it.
+
+Any bug reports or observations, please message this GitHub user: https://github.com/William-Shearer/William-Shearer, or, Private Message user "William-K" (no quotes) on https://discourse.libsdl.org/
+
+Many thanks.
