@@ -175,7 +175,7 @@ SDL_Surface* load_base_image(char* inf_name, char* outf_name)
 		else
 		{
 			printf("File extension | %s | is not known.\n", dot_ext);
-			// blank the string again right here so that it does not cause issues later.
+			// ----
 		}
 
 		if (tempSurf != NULL) // Surface must have loaded with the provided file name.
